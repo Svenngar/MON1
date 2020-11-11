@@ -53,6 +53,23 @@ Il faut ensuite transformer les fichiers sasl\_passwd et tls\_policy en fichier 
 postmap /etc/postfix/sasl_passwd && postmap /etc/postfix/tls_policy
 ```
 
+Puis il faut éditer le fichier `main.ch` et modifier la ligne suivante car ipv6 n'est pas pris en charge comme annoncé:
+
+```text
+# Enable IPv4, and IPv6 if supported
+inet_protocols = ipv4
+```
+
+Finalement nous devons modifier la configuration du serveur Pandora de manière à ne pas finir dans les spamm, fichier `pandora_server.conf` :
+
+```text
+mta_from Richard Chassot <richard.chassot.mon1@gmail.com>
+```
+
+{% hint style="danger" %}
+Veillez à commenter toute autre ligne possédant un "mta"
+{% endhint %}
+
 Nous pouvons redémarrer le service et effectuer un test:
 
 ```text
@@ -64,4 +81,6 @@ echo "This is an email test sent from Pandora FMS. If you can read this, your co
 Et nous recevons bien l'e-mail:
 
 ![](../.gitbook/assets/image.png)
+
+
 

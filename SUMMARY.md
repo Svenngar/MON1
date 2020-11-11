@@ -20,11 +20,11 @@
 ## Serveur Pandora - CentOS
 
 * [Installation de la Console et du Serveur de Pandora FMS](serveur-pandora-centos/script.md)
-* [Optimisation des services](serveur-pandora-centos/optimisation-des-services.md)
+* [Connexion à la console Pandora](serveur-pandora-centos/connexion-a-la-console-pandora.md)
 * [Configuration de Pandora](serveur-pandora-centos/configuration-de-pandora.md)
+* [Optimisation des services](serveur-pandora-centos/optimisation-des-services.md)
 * [Script complet Pandora\_server & Pandora\_console](serveur-pandora-centos/script-dinstallation-pandora-server-console.md)
 * [Utilisation des logs](serveur-pandora-centos/utilisation-des-logs.md)
-* [Connexion à la console Pandora](serveur-pandora-centos/connexion-a-la-console-pandora.md)
 
 ## Agent Windows
 
