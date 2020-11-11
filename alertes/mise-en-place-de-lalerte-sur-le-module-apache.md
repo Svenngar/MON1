@@ -2,7 +2,7 @@
 
 Pour recevoir l'alerte nous devons lier la commande de l'alerte twitter ainsi que celle de mail to admin.
 
-Nous avons besoin ensuite de créer une commande spécialisée va lancer une commande de bash quand le module déclenchera une alerte:
+Nous avons besoin ensuite de créer une commande spécialisée qui va lancer une commande de bash quand le module déclenchera une alerte:
 
 ```text
 ssh debian@10.0.4.5 'sudo systemctl start apache2'
