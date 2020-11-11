@@ -8,6 +8,23 @@ Nous avons besoin ensuite de créer une commande spécialisée qui n'aura pas d'
 ssh debian@10.0.4.5 'sudo systemctl start apache2'
 ```
 
+![](../.gitbook/assets/image%20%2819%29.png)
+
+L'ajouter à l'action:
+
+![](../.gitbook/assets/image%20%2822%29.png)
+
+Puis ajouter l'action à l'alerte:
+
+![](../.gitbook/assets/image%20%2820%29.png)
+
+{% hint style="warning" %}
+Les problèmes qu'engendrent une telle commande sont les suivants:
+
+* Droit de connexion par SSH d'une machine à une autre sans prompt de mot de passe
+* Droit d'exécution d'une commande avec sudo sans prompt de mot de passe
+{% endhint %}
+
 Nous devons ensuite désactiver le prompt du password pour la commande systemctl sur le client debian pour l'utilisateur debian:
 
 ```text
